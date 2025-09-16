@@ -1,0 +1,12 @@
+testuser@ubuntutest:~$ pwd
+/home/testuser
+testuser@ubuntutest:~$ touch demo.txt
+testuser@ubuntutest:~$ echo "Demo file" > demo.txt
+testuser@ubuntutest:~$ cat demo.txt
+Demo file
+testuser@ubuntutest:~$ chmod 764 demo.txt
+testuser@ubuntutest:~$ ls -l
+total 8
+-rwxrw-r-- 1 testuser testuser   10 Sep 16 06:47 demo.txt
+drwxrwxr-x 2 testuser testuser 4096 Sep 16 06:40 my_folder
+testuser@ubuntutest:~$
