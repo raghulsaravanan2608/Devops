@@ -1,0 +1,17 @@
+testuser@ubuntutest:~$ mkdir my_folder
+testuser@ubuntutest:~$ ls
+my_folder
+testuser@ubuntutest:~$ cd my_folder/
+testuser@ubuntutest:~/my_folder$ touch my_file.txt
+testuser@ubuntutest:~/my_folder$ echo "Hello World." > my_file.txt
+testuser@ubuntutest:~/my_folder$ touch another_file.txt
+testuser@ubuntutest:~/my_folder$ echo "This is the second file." > another_file.txt
+testuser@ubuntutest:~/my_folder$ cat another_file.txt >> my_file.txt
+testuser@ubuntutest:~/my_folder$ cat my_file.txt
+Hello World.
+This is the second file.
+testuser@ubuntutest:~/my_folder$ ls -l
+total 8
+-rw-rw-r-- 1 testuser testuser 25 Sep 16 06:13 another_file.txt
+-rw-rw-r-- 1 testuser testuser 38 Sep 16 06:14 my_file.txt
+testuser@ubuntutest:~/my_folder$
