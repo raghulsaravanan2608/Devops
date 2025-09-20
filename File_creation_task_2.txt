@@ -1,12 +1,22 @@
-testuser@ubuntutest:~/my_folder$ touch file_{1..20}.txt
-testuser@ubuntutest:~/my_folder$ mv file_1.txt file_1.yml
-testuser@ubuntutest:~/my_folder$ mv file_2.txt file_2.yml
-testuser@ubuntutest:~/my_folder$ mv file_3.txt file_3.yml
-testuser@ubuntutest:~/my_folder$ mv file_4.txt file_4.yml
-testuser@ubuntutest:~/my_folder$ mv file_5.txt file_5.yml
-testuser@ubuntutest:~/my_folder$ ls -lt | head -n 5
+testuser@ubuntutest:~/my_folder$ touch file{1..20}.txt
+testuser@ubuntutest:~/my_folder$ ls
+another_file.txt  file12.txt  file15.txt  file18.txt  file20.txt  file4.txt  file7.txt  my_file.txt
+file10.txt        file13.txt  file16.txt  file19.txt  file2.txt   file5.txt  file8.txt
+file11.txt        file14.txt  file17.txt  file1.txt   file3.txt   file6.txt  file9.txt
+testuser@ubuntutest:~/my_folder$ mv file1.txt file1.yml
+testuser@ubuntutest:~/my_folder$ mv file2.txt file2.yml
+testuser@ubuntutest:~/my_folder$ mv file3.txt file3.yml
+testuser@ubuntutest:~/my_folder$ mv file4.txt file4.yml
+testuser@ubuntutest:~/my_folder$ mv file5.txt file5.yml
+testuser@ubuntutest:~/my_folder$ ls
+another_file.txt  file12.txt  file15.txt  file18.txt  file20.txt  file4.yml  file7.txt  my_file.txt
+file10.txt        file13.txt  file16.txt  file19.txt  file2.yml   file5.yml  file8.txt
+file11.txt        file14.txt  file17.txt  file1.yml   file3.yml   file6.txt  file9.txt
+testuser@ubuntutest:~/my_folder$ ls -lt | head -6
 total 8
--rw-rw-r-- 1 testuser testuser  0 Sep 16 06:38 file_10.txt
--rw-rw-r-- 1 testuser testuser  0 Sep 16 06:38 file_11.txt
--rw-rw-r-- 1 testuser testuser  0 Sep 16 06:38 file_12.txt
--rw-rw-r-- 1 testuser testuser  0 Sep 16 06:38 file_13.txt
+-rw-rw-r-- 1 testuser testuser  0 Sep 20 05:05 file10.txt
+-rw-rw-r-- 1 testuser testuser  0 Sep 20 05:05 file11.txt
+-rw-rw-r-- 1 testuser testuser  0 Sep 20 05:05 file12.txt
+-rw-rw-r-- 1 testuser testuser  0 Sep 20 05:05 file13.txt
+-rw-rw-r-- 1 testuser testuser  0 Sep 20 05:05 file14.txt
+testuser@ubuntutest:~/my_folder$
